@@ -1,35 +1,68 @@
 <!DOCTYPE html>
-<html>
-<title>USB HDD BOOT 2025</title>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<meta name="description" content="USB HDD BOOT v2.8.2022.02 giúp bạn tạo usb boot để cài đặt windows và khắc phục sự cố máy tính trên cả 2 chuẩn uefi và legacy, ..." />
-<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
-<style>
-body,h1 {font-family: "Raleway", sans-serif}
-body, html {height: 100%}
-.bgimg {
-  background-image: url('https://www.w3schools.com/w3images/forestbridge.jpg');
-  min-height: 100%;
-  background-position: center;
-  background-size: cover;
-}
-</style>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="USB HDD BOOT v2.8.2022.02 giúp bạn tạo usb boot để cài đặt windows và khắc phục sự cố máy tính trên cả 2 chuẩn UEFI và Legacy.">
+    <title>USB HDD BOOT 2025</title>
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+    <style>
+        body, h1 { font-family: "Raleway", sans-serif }
+        body, html { height: 100%; margin: 0; }
+        .bgimg {
+            background-image: url('https://www.w3schools.com/w3images/forestbridge.jpg'); /* Thay ảnh nền tùy chỉnh */
+            min-height: 100%;
+            background-position: center;
+            background-size: cover;
+        }
+        #countdown {
+            font-size: 24px;
+            font-weight: bold;
+            margin-top: 20px;
+        }
+    </style>
+</head>
 <body>
 
 <div class="bgimg w3-display-container w3-animate-opacity w3-text-white">
-  <div class="w3-display-topleft w3-padding-large w3-xlarge">
-  </div>
-  <div class="w3-display-middle">
-    <h1 class="w3-jumbo w3-animate-top"><center>USB HDD BOOT</center></h1>
-    <hr class="w3-border-grey" style="margin:auto;width:40%">
-    <p class="w3-large w3-center">COMING SOON</p>
-  </div>
-  <div class="w3-display-bottomleft w3-padding-large">
-    Powered by <a href="https://www.w3schools.com/w3css/default.asp" target="_blank">w3.css</a>
-  </div>
+    <div class="w3-display-middle w3-center">
+        <h1 class="w3-jumbo w3-animate-top">USB HDD BOOT</h1>
+        <hr class="w3-border-grey" style="margin:auto;width:50%">
+        <p class="w3-large">COMING SOON</p>
+        
+        <!-- Bộ đếm ngược -->
+        <div id="countdown"></div>
+    </div>
+    
+    <div class="w3-display-bottomleft w3-padding-large">
+        Powered by <a href="https://www.w3schools.com/w3css/default.asp" target="_blank">w3.css</a>
+    </div>
 </div>
+
+<script>
+    // Cài đặt thời gian kết thúc
+    const launchDate = new Date("2025-04-01T00:00:00").getTime();
+
+    const countdown = setInterval(() => {
+        const now = new Date().getTime();
+        const timeLeft = launchDate - now;
+
+        if (timeLeft < 0) {
+            clearInterval(countdown);
+            document.getElementById("countdown").innerHTML = "<h2>Chúng tôi đã ra mắt!</h2>";
+            return;
+        }
+
+        const days = Math.floor(timeLeft / (1000 * 60 * 60 * 24));
+        const hours = Math.floor((timeLeft % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+        const minutes = Math.floor((timeLeft % (1000 * 60 * 60)) / (1000 * 60));
+        const seconds = Math.floor((timeLeft % (1000 * 60)) / 1000);
+
+        document.getElementById("countdown").innerHTML = 
+            `<div>${days} ngày ${hours} giờ ${minutes} phút ${seconds} giây</div>`;
+    }, 1000);
+</script>
 
 </body>
 </html>
