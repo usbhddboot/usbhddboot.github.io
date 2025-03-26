@@ -1,3 +1,3 @@
 ## USB HDD BOOT
-- Website: https://www.usbhddboot.xyz
+- Website: https://usbhddboot.blogspot.com
 - Facebook: https://www.facebook.com/usbhddboot
