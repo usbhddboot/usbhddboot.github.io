@@ -2,67 +2,173 @@
 <html lang="vi">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="USB HDD BOOT v2.8.2022.02 giúp bạn tạo usb boot để cài đặt windows và khắc phục sự cố máy tính trên cả 2 chuẩn UEFI và Legacy.">
-    <title>USB HDD BOOT 2025</title>
-    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>USB HDD BOOT - Cứu hộ máy tính, tạo USB boot chuyên nghiệp</title>
+
+    <!-- SEO Meta -->
+    <meta name="description" content="USB HDD BOOT là phần mềm cứu hộ máy tính miễn phí, hỗ trợ tạo USB Boot chuẩn UEFI/Legacy với Windows PE và công cụ cứu hộ đa dạng. Phát triển bởi Hoàng Đợi.">
+    <meta name="keywords" content="USB HDD BOOT, tạo USB boot, cứu hộ máy tính, boot UEFI, boot Legacy, Hoàng Đợi">
+    <meta name="author" content="Hoàng Đợi">
+
+    <!-- Open Graph Meta (Facebook, Zalo) -->
+    <meta property="og:title" content="USB HDD BOOT - Cứu hộ máy tính chuyên nghiệp">
+    <meta property="og:description" content="Tạo USB Boot chuẩn UEFI/Legacy với công cụ cứu hộ máy tính đa dạng. Phát triển bởi Hoàng Đợi.">
+    <meta property="og:image" content="https://usbhddboot.github.io/usbhddboot.jpg"> <!-- Cần thay bằng link ảnh thật -->
+    <meta property="og:url" content="https://usbhddboot.github.io">
+    <meta property="og:type" content="website">
+
+    <!-- Structured Data -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "SoftwareApplication",
+      "name": "USB HDD BOOT",
+      "operatingSystem": "Windows",
+      "applicationCategory": "Utility",
+      "description": "Phần mềm cứu hộ máy tính, tạo USB Boot chuẩn UEFI và Legacy miễn phí, dễ sử dụng.",
+      "offers": {
+        "@type": "Offer",
+        "price": "0",
+        "priceCurrency": "VND"
+      },
+      "author": {
+        "@type": "Person",
+        "name": "Hoàng Đợi"
+      }
+    }
+    </script>
+
+    <!-- Fonts and CSS -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
     <style>
-        body, h1 { font-family: "Raleway", sans-serif }
-        body, html { height: 100%; margin: 0; }
-        .bgimg {
-            background-image: url('https://www.w3schools.com/w3images/forestbridge.jpg'); /* Thay ảnh nền tùy chỉnh */
-            min-height: 100%;
-            background-position: center;
-            background-size: cover;
+        body { font-family: 'Roboto', sans-serif; }
+        .hero {
+            background: linear-gradient(to right, #0062E6, #33AEFF);
+            color: white;
+            padding: 100px 20px;
+            text-align: center;
         }
-        #countdown {
-            font-size: 24px;
+        .features-icon {
+            font-size: 50px;
+            color: #007BFF;
+            margin-bottom: 15px;
+        }
+        .section-title {
+            margin-bottom: 40px;
             font-weight: bold;
-            margin-top: 20px;
+        }
+        footer {
+            background-color: #007BFF;
+            color: white;
+            padding: 20px 0;
+        }
+        .btn-custom {
+            margin: 10px;
         }
     </style>
 </head>
+
 <body>
 
-<div class="bgimg w3-display-container w3-animate-opacity w3-text-white">
-    <div class="w3-display-middle w3-center">
-        <h1 class="w3-jumbo w3-animate-top">USB HDD BOOT</h1>
-        <hr class="w3-border-grey" style="margin:auto;width:50%">
-        <p class="w3-large">COMING SOON</p>
-        
-        <!-- Bộ đếm ngược -->
-        <div id="countdown"></div>
-    </div>
-    
-    <div class="w3-display-bottomleft w3-padding-large">
-        Powered by <a href="https://www.w3schools.com/w3css/default.asp" target="_blank">w3.css</a>
-    </div>
-</div>
+    <!-- Header Hero Section -->
+    <header class="hero">
+        <div class="container">
+            <h1 class="display-4 fw-bold">USB HDD BOOT</h1>
+            <p class="lead mt-3">Cứu hộ máy tính chuyên nghiệp, đơn giản trong tầm tay</p>
+            <a href="https://github.com/usbhddboot/USB-HDD-BOOT/releases/" class="btn btn-light btn-lg btn-custom">Tải về ngay</a>
+            <a href="https://usbhddboot.blogspot.com/p/cach-su-dung.html" class="btn btn-outline-light btn-lg btn-custom">Xem hướng dẫn</a>
+        </div>
+    </header>
 
-<script>
-    // Cài đặt thời gian kết thúc
-    const launchDate = new Date("2025-04-01T00:00:00").getTime();
+    <!-- Main Content -->
+    <main>
 
-    const countdown = setInterval(() => {
-        const now = new Date().getTime();
-        const timeLeft = launchDate - now;
+        <!-- Features Section -->
+        <section id="features" class="py-5">
+            <div class="container">
+                <h2 class="text-center section-title">Tính năng nổi bật</h2>
+                <div class="row text-center">
+                    <div class="col-md-3 mb-4">
+                        <div class="features-icon">⚙️</div>
+                        <h3 class="h5">Hỗ trợ mọi chuẩn BIOS</h3>
+                        <p>Khởi động mượt mà trên cả UEFI và Legacy BIOS.</p>
+                    </div>
+                    <div class="col-md-3 mb-4">
+                        <div class="features-icon">💻</div>
+                        <h3 class="h5">Tạo USB cài đặt hệ điều hành</h3>
+                        <p>Windows XP, Windows 7 / 8 / 8.1 / 10 / 11, Windows Server (2003, 2008, 2012, 2016, 2019, 2022)</p>
+                    </div>
+                    <div class="col-md-3 mb-4">
+                        <div class="features-icon">🛠️</div>
+                        <h3 class="h5">Công cụ cứu hộ đa dạng</h3>
+                        <p>Tích hợp Windows PE, Ghost, Partition Wizard, Acronis, v.v.</p>
+                    </div>
+                    <div class="col-md-3 mb-4">
+                        <div class="features-icon">🇻🇳</div>
+                        <h3 class="h5">Giao diện thuần Việt</h3>
+                        <p>Hỗ trợ tiếng Việt hoàn chỉnh, dễ sử dụng cho mọi đối tượng.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
 
-        if (timeLeft < 0) {
-            clearInterval(countdown);
-            document.getElementById("countdown").innerHTML = "<h2>Chúng tôi đã ra mắt!</h2>";
-            return;
-        }
+        <!-- About Section -->
+        <section id="about" class="py-5 bg-light">
+            <div class="container">
+                <h2 class="text-center section-title">Tại sao chọn USB HDD BOOT?</h2>
+                <p class="text-center mb-5">
+                    Với sự ổn định, linh hoạt và hoàn toàn miễn phí, USB HDD BOOT là sự lựa chọn số 1
+                    cho kỹ thuật viên và người yêu công nghệ tại Việt Nam.
+                </p>
+                <div class="row">
+                    <div class="col-md-6 mb-4">
+                        <h3 class="h5">Ổn định & Bền bỉ</h3>
+                        <p>Hoạt động mượt mà, chịu được nhiều lần ghi xóa.</p>
+                    </div>
+                    <div class="col-md-6 mb-4">
+                        <h3 class="h5">Linh hoạt cao</h3>
+                        <p>Dễ dàng tùy biến thêm ISO, phần mềm bổ sung theo nhu cầu.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
 
-        const days = Math.floor(timeLeft / (1000 * 60 * 60 * 24));
-        const hours = Math.floor((timeLeft % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-        const minutes = Math.floor((timeLeft % (1000 * 60 * 60)) / (1000 * 60));
-        const seconds = Math.floor((timeLeft % (1000 * 60)) / 1000);
+        <!-- Audience Section -->
+        <section id="audience" class="py-5">
+            <div class="container">
+                <h2 class="text-center section-title">Ai nên sử dụng?</h2>
+                <div class="row text-center">
+                    <div class="col-md-3 mb-4">
+                        <h3 class="h6">Kỹ thuật viên IT</h3>
+                        <p>Công cụ cứu hộ chuyên nghiệp mọi lúc mọi nơi.</p>
+                    </div>
+                    <div class="col-md-3 mb-4">
+                        <h3 class="h6">Người dùng cá nhân</h3>
+                        <p>Xử lý sự cố máy tính tại nhà dễ dàng.</p>
+                    </div>
+                    <div class="col-md-3 mb-4">
+                        <h3 class="h6">Doanh nghiệp</h3>
+                        <p>Triển khai nhanh chóng hệ thống máy tính.</p>
+                    </div>
+                    <div class="col-md-3 mb-4">
+                        <h3 class="h6">Sinh viên CNTT</h3>
+                        <p>Học kỹ năng cứu hộ máy tính thực tế.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
 
-        document.getElementById("countdown").innerHTML = 
-            `<div>${days} ngày ${hours} giờ ${minutes} phút ${seconds} giây</div>`;
-    }, 1000);
-</script>
+    </main>
+
+    <!-- Footer -->
+    <footer class="text-center">
+        <p>© 2025 USB HDD BOOT - Phát triển bởi Hoàng Đợi</p>
+    </footer>
+
+    <!-- JS Scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
 
 </body>
 </html>
