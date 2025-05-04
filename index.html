@@ -9,41 +9,44 @@
     <meta name="description" content="USB HDD BOOT là phần mềm cứu hộ máy tính miễn phí, hỗ trợ tạo USB Boot chuẩn UEFI/Legacy với Windows PE và công cụ cứu hộ đa dạng. Phát triển bởi Hoàng Đợi.">
     <meta name="keywords" content="USB HDD BOOT, tạo USB boot, cứu hộ máy tính, boot UEFI, boot Legacy, Hoàng Đợi">
     <meta name="author" content="Hoàng Đợi">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://usbhddboot.github.io" />
+    <link rel="icon" href="https://usbhddboot.github.io/assets/images/favicon.ico" type="image/x-icon">
 
     <!-- Open Graph Meta (Facebook, Zalo) -->
     <meta property="og:title" content="USB HDD BOOT - Cứu hộ máy tính chuyên nghiệp">
     <meta property="og:description" content="Tạo USB Boot chuẩn UEFI/Legacy với công cụ cứu hộ máy tính đa dạng. Phát triển bởi Hoàng Đợi.">
-    <meta property="og:image" content="https://usbhddboot.github.io/files/icon.jpg">
+    <meta property="og:image" content="https://usbhddboot.github.io/assets/images/usb-hdd-boot-cuu-ho-may-tinh-chuyen-nghiep.jpg">
     <meta property="og:url" content="https://usbhddboot.github.io">
     <meta property="og:type" content="website">
 
     <!-- Structured Data -->
-    <script type="application/ld+json">
-    {
-      "@context": "https://schema.org",
-      "@type": "SoftwareApplication",
-      "name": "USB HDD BOOT",
-      "operatingSystem": "Windows",
-      "applicationCategory": "Utility",
-      "description": "Phần mềm cứu hộ máy tính, tạo USB Boot chuẩn UEFI và Legacy miễn phí, dễ sử dụng.",
-      "offers": {
-        "@type": "Offer",
-        "price": "0",
-        "priceCurrency": "VND"
-      },
-      "author": {
-        "@type": "Person",
-        "name": "Hoàng Đợi"
-      }
-    }
-    </script>
+	<script type="application/ld+json">
+	{
+	  "@context": "https://schema.org",
+	  "@type": "WebSite",
+	  "name": "USB HDD BOOT",
+	  "url": "https://usbhddboot.github.io",
+	  "description": "USB HDD BOOT là phần mềm tạo USB Boot cài đặt Windows, cứu hộ máy tính hỗ trợ chuẩn UEFI và Legacy, tích hợp Windows PE với nhiều công cụ cứu hộ đa năng, giao diện tiếng Việt thân thiện, dễ sử dụng.",
+	  "publisher": {
+	    "@type": "Organization",
+	    "name": "USB HDD BOOT",
+	    "url": "https://usbhddboot.github.io",
+	    "logo": {
+	      "@type": "ImageObject",
+	      "url": "https://usbhddboot.github.io/assets/images/usb-hdd-boot-cuu-ho-may-tinh-chuyen-nghiep.jpg"
+	    }
+	  },
+	  "inLanguage": "vi-VN"
+	}
+	</script>
 
     <!-- Fonts and CSS -->
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
 
     <style>
-        body { font-family: 'Roboto', sans-serif; font-size: 18px}
+        body { font-family: 'Roboto', sans-serif; line-height: 1.7; padding-top: 0; }
         .hero {
             background: linear-gradient(to right, #0062E6, #33AEFF);
             color: white;
@@ -75,103 +78,99 @@
 
 <body>
 
-    <!-- Header Hero Section -->
-    <header class="hero">
-        <div class="container">
-            <h1 class="display-4 fw-bold">USB HDD BOOT</h1>
-            <p class="lead mt-3">Cứu hộ máy tính chuyên nghiệp, đơn giản trong tầm tay</p>
-            <a href="https://github.com/usbhddboot/USB-HDD-BOOT/releases/" class="btn btn-light btn-lg btn-custom">Tải về ngay</a>
-            <a href="https://usbhddboot.blogspot.com/p/cach-su-dung.html" class="btn btn-outline-light btn-lg btn-custom">Xem hướng dẫn</a>
-        </div>
-    </header>
-
-    <!-- Main Content -->
-    <main>
-
-        <!-- About Section -->
-        <section id="about" class="py-5 bg-light">
-            <div class="container">
-                <h2 class="text-center section-title">USB HDD BOOT là gì?</h2>
-                <p class="text-left mb-5">
-					USB HDD BOOT là phần mềm miễn phí giúp tạo USB boot đa năng để cài đặt Windows, khắc phục sự cố, sao lưu và cứu hộ dữ liệu. Hỗ trợ cả chuẩn UEFI và Legacy, tương thích với Windows XP đến Windows 11. Dễ sử dụng, gọn nhẹ và hiệu quả, đây là công cụ lý tưởng cho kỹ thuật viên và người dùng phổ thông.
-                </p>
-            </div>
-        </section>
-
-        <!-- Features Section -->
-        <section id="features" class="py-5">
-            <div class="container">
-                <h2 class="text-center section-title">Tính năng nổi bật</h2>
-                <div class="row text-center">
-                    <div class="col-md-3 mb-4">
-                        <div class="features-icon">⚙️</div>
-                        <h3 class="h5 second-title">Hỗ trợ mọi chuẩn BIOS</h3>
-                        <p>Khởi động mượt mà trên cả UEFI và Legacy BIOS.</p>
-                    </div>
-                    <div class="col-md-3 mb-4">
-                        <div class="features-icon">💻</div>
-                        <h3 class="h5 second-title">Tạo USB cài đặt hệ điều hành</h3>
-                        <p>Windows XP, Windows 7 / 8 / 8.1 / 10 / 11, Windows Server (2003, 2008, 2012, 2016, 2019, 2022)</p>
-                    </div>
-                    <div class="col-md-3 mb-4">
-                        <div class="features-icon">🛠️</div>
-                        <h3 class="h5 second-title">Công cụ cứu hộ đa dạng</h3>
-                        <p>Tích hợp Windows PE, Ghost, Partition Wizard, Acronis, v.v.</p>
-                    </div>
-                    <div class="col-md-3 mb-4">
-                        <div class="features-icon">🇻🇳</div>
-                        <h3 class="h5 second-title">Giao diện thuần Việt</h3>
-                        <p>Hỗ trợ tiếng Việt hoàn chỉnh, dễ sử dụng cho mọi đối tượng.</p>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- About Section -->
-        <section id="about" class="py-5 bg-light">
-            <div class="container">
-                <h2 class="text-center section-title">Tại sao chọn USB HDD BOOT?</h2>
-                <p class="text-left mb-5">
-                    Với sự ổn định, linh hoạt và hoàn toàn miễn phí, USB HDD BOOT là sự lựa chọn số 1
-                    cho kỹ thuật viên và người yêu công nghệ tại Việt Nam.
-                </p>
-                <div class="row">
-                    <div class="col-md-6 mb-4">
-                        <h3 class="h5 second-title">Ổn định & Bền bỉ</h3>
-                        <p>Hoạt động mượt mà, chịu được nhiều lần ghi xóa.</p>
-                    </div>
-                    <div class="col-md-6 mb-4">
-                        <h3 class="h5 second-title">Linh hoạt cao</h3>
-                        <p>Dễ dàng tùy biến thêm ISO, phần mềm bổ sung theo nhu cầu.</p>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- Audience Section -->
-        <section id="audience" class="py-5">
-            <div class="container">
-                <h2 class="text-center section-title">Ai nên sử dụng?</h2>
-                <div class="row text-center">
-                    <div class="col-md-3 mb-4">
-                        <h3 class="h6 second-title">Kỹ thuật viên IT</h3>
-                        <p>Công cụ cứu hộ chuyên nghiệp mọi lúc mọi nơi.</p>
-                    </div>
-                    <div class="col-md-3 mb-4">
-                        <h3 class="h6 second-title">Người dùng cá nhân</h3>
-                        <p>Xử lý sự cố máy tính tại nhà dễ dàng.</p>
-                    </div>
-                    <div class="col-md-3 mb-4">
-                        <h3 class="h6 second-title">Doanh nghiệp</h3>
-                        <p>Triển khai nhanh chóng hệ thống máy tính.</p>
-                    </div>
-                    <div class="col-md-3 mb-4">
-                        <h3 class="h6 second-title">Sinh viên CNTT</h3>
-                        <p>Học kỹ năng cứu hộ máy tính thực tế.</p>
-                    </div>
-                </div>
-            </div>
-        </section>
+    	<!-- Hero Section -->
+		<header class="hero">
+		  <div class="container">
+		    <h1 class="display-4 fw-bold">USB HDD BOOT</h1>
+		    <p class="lead mt-3">Giải pháp cứu hộ máy tính chuyên nghiệp, dễ dùng cho mọi người</p>
+		    <a href="https://usbhddboot.github.io/pages/tai-ve-usb-hdd-boot.html" class="btn btn-light btn-lg btn-custom">Tải về miễn phí</a>
+		    <a href="https://usbhddboot.github.io/pages/huong-dan-su-dung-usb-hdd-boot.html" class="btn btn-outline-light btn-lg btn-custom">Hướng dẫn sử dụng</a>
+		  </div>
+		</header>
+		
+		<!-- Giới thiệu -->
+		<section class="py-5 bg-light" id="about">
+		  <div class="container">
+		    <h2 class="text-center section-title">USB HDD BOOT là gì?</h2>
+		    <p>
+		      USB HDD BOOT là phần mềm miễn phí giúp tạo USB boot đa năng phục vụ cài đặt hệ điều hành, sửa lỗi, sao lưu và phục hồi dữ liệu. Phần mềm hỗ trợ cả chuẩn UEFI và Legacy, tương thích từ Windows XP đến Windows 11. Giao diện tiếng Việt thân thiện, sử dụng dễ dàng cho cả người mới và kỹ thuật viên chuyên nghiệp.
+		    </p>
+		  </div>
+		</section>
+		
+		<!-- Tính năng nổi bật -->
+		<section class="py-5" id="features">
+		  <div class="container">
+		    <h2 class="text-center section-title">Tính năng nổi bật</h2>
+		    <div class="row text-center">
+		      <div class="col-md-3 mb-4">
+		        <div class="features-icon">⚙️</div>
+		        <h3 class="h5 second-title">Tương thích mọi chuẩn BIOS</h3>
+		        <p>Khởi động dễ dàng trên cả máy UEFI và Legacy.</p>
+		      </div>
+		      <div class="col-md-3 mb-4">
+		        <div class="features-icon">💻</div>
+		        <h3 class="h5 second-title">Tạo USB cài Windows</h3>
+		        <p>Hỗ trợ đầy đủ Windows XP, 7, 8, 10, 11 và các bản Server.</p>
+		      </div>
+		      <div class="col-md-3 mb-4">
+		        <div class="features-icon">🛠️</div>
+		        <h3 class="h5 second-title">Công cụ cứu hộ đa dạng</h3>
+		        <p>Windows PE, Ghost, Acronis, Partition Wizard và nhiều tiện ích khác.</p>
+		      </div>
+		      <div class="col-md-3 mb-4">
+		        <div class="features-icon">🇻🇳</div>
+		        <h3 class="h5 second-title">Giao diện tiếng Việt</h3>
+		        <p>Dễ hiểu, dễ dùng, thân thiện với người Việt.</p>
+		      </div>
+		    </div>
+		  </div>
+		</section>
+		
+		<!-- Lý do nên dùng -->
+		<section class="py-5 bg-light" id="why">
+		  <div class="container">
+		    <h2 class="text-center section-title">Vì sao nên chọn USB HDD BOOT?</h2>
+		    <p>
+		      Với khả năng hoạt động ổn định, dễ tùy chỉnh và hoàn toàn miễn phí, USB HDD BOOT là lựa chọn hàng đầu của kỹ thuật viên và người yêu công nghệ tại Việt Nam.
+		    </p>
+		    <div class="row">
+		      <div class="col-md-6 mb-4">
+		        <h3 class="h5 second-title">Hoạt động ổn định</h3>
+		        <p>Tối ưu cho tốc độ boot và khả năng tương thích phần cứng.</p>
+		      </div>
+		      <div class="col-md-6 mb-4">
+		        <h3 class="h5 second-title">Linh hoạt cao</h3>
+		        <p>Dễ dàng thêm bộ cài ISO, công cụ và tiện ích theo nhu cầu.</p>
+		      </div>
+		    </div>
+		  </div>
+		</section>
+		
+		<!-- Đối tượng phù hợp -->
+		<section class="py-5" id="audience">
+		  <div class="container">
+		    <h2 class="text-center section-title">Ai nên dùng phần mềm này?</h2>
+		    <div class="row text-center">
+		      <div class="col-md-3 mb-4">
+		        <h3 class="h6 second-title">Kỹ thuật viên</h3>
+		        <p>Giải pháp cứu hộ gọn nhẹ, hiệu quả trong mọi tình huống.</p>
+		      </div>
+		      <div class="col-md-3 mb-4">
+		        <h3 class="h6 second-title">Người dùng cá nhân</h3>
+		        <p>Tự xử lý lỗi máy tính đơn giản tại nhà.</p>
+		      </div>
+		      <div class="col-md-3 mb-4">
+		        <h3 class="h6 second-title">Doanh nghiệp</h3>
+		        <p>Tiết kiệm thời gian triển khai và bảo trì hệ thống.</p>
+		      </div>
+		      <div class="col-md-3 mb-4">
+		        <h3 class="h6 second-title">Sinh viên CNTT</h3>
+		        <p>Công cụ thực hành và học hỏi kỹ năng cứu hộ máy tính.</p>
+		      </div>
+		    </div>
+		  </div>
+		</section>
 
     </main>
 
