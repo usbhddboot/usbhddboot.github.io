@@ -24,7 +24,7 @@
   <meta name="twitter:card" content="summary_large_image" />
   <meta name="twitter:title" content="Hướng dẫn sử dụng USB HDD BOOT" />
   <meta name="twitter:description" content="Hướng dẫn chi tiết cách tạo USB boot đa năng chuẩn UEFI/Legacy và cứu hộ máy tính bằng USB HDD BOOT." />
-  <meta name="twitter:image" content="https://usbhddboot.github.io/assets/images/huong-dan-su-dung-usb-hdd-boot.jpg" />
+  <meta name="twitter:image" content="https://usbhddboot.github.io/assets/images/huong-dan-su-dung-usb-hdd-boot.webp" />
   
   <!-- Structured Data -->
 	<script type="application/ld+json">
@@ -42,7 +42,7 @@
 	    "name": "USB HDD BOOT",
 	    "logo": {
 	      "@type": "ImageObject",
-	      "url": "https://usbhddboot.github.io/assets/images/huong-dan-su-dung-usb-hdd-boot.jpg"
+	      "url": "https://usbhddboot.github.io/assets/images/huong-dan-su-dung-usb-hdd-boot.webp"
 	    }
 	  },
 	  "datePublished": "2025-05-04",
@@ -57,9 +57,11 @@
   <!-- Fonts and CSS -->
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
 
   <style>
     body { font-family: 'Roboto', sans-serif; line-height: 1.7; padding-top: 0; }
+    table th, table td { text-align: center; vertical-align: middle; }
     .hero {
       background: linear-gradient(to right, #0062E6, #33AEFF);
       color: white;
@@ -74,9 +76,29 @@
     h2 {
       margin-top: 40px;
       color: #0056b3;
+      font-weight: bold;
+    }
+    .section-title {
+        font-weight: bold;
+        margin-top: 40px;
+        text-align: center;
     }
     ul, ol {
       padding-left: 20px;
+    }
+    .download-link a {
+      text-decoration: none;
+      color: #0d6efd;
+    }
+    .download-link a:hover {
+      color: #0056b3;
+      text-decoration: underline;
+    }
+    .note {
+      background-color: #fff3cd;
+      border-left: 5px solid #ffc107;
+      padding: 10px;
+      margin-top: 20px;
     }
     .video iframe {
       width: 100%;
@@ -84,7 +106,7 @@
       margin-top: 20px;
     }
     footer {
-      background-color: #007BFF;
+      background: linear-gradient(to right, #33AEFF, #0062E6);
       color: white;
       padding: 20px 0;
     }
@@ -101,7 +123,7 @@
     <div class="container">
       <h1 class="display-5 fw-bold">Hướng dẫn sử dụng USB HDD BOOT</h1>
       <p class="lead">Chi tiết từng bước để bạn làm chủ phần mềm cứu hộ máy tính</p>
-      <a href="https://usbhddboot.github.io" class="btn btn-light btn-lg btn-custom">Trang chủ</a>
+      <a href="https://usbhddboot.github.io" class="btn btn-light btn-lg btn-custom"><i class="bi bi-house-door-fill"></i> Trang chủ</a>
       <a href="https://usbhddboot.github.io/pages/tai-ve-usb-hdd-boot.html" class="btn btn-outline-light btn-lg btn-custom">Tải về USB HDD BOOT</a>
     </div>
   </header>
@@ -110,7 +132,7 @@
   <div class="content">
     <p><strong>USB HDD BOOT</strong> là phần mềm tạo USB Boot đa năng miễn phí, mạnh mẽ và dễ sử dụng. Giúp bạn tạo USB boot chuẩn UEFI và Legacy để cài đặt hệ điều hành Windows hoặc thực hiện các tác vụ cứu hộ máy tính hiệu quả. Với USB HDD BOOT, bạn có thể dễ dàng tạo một chiếc USB khởi động đa năng để sử dụng trên cả các máy tính cũ và mới.</p>
     
-    <img src="https://usbhddboot.github.io/assets/images/huong-dan-su-dung-usb-hdd-boot.jpg" alt="Hướng dẫn sử dụng USB HDD BOOT" class="img-fluid rounded shadow mb-4 d-block mx-auto">
+    <img src="https://usbhddboot.github.io/assets/images/huong-dan-su-dung-usb-hdd-boot.webp" alt="Hướng dẫn sử dụng USB HDD BOOT" class="img-fluid rounded shadow mb-4 d-block mx-auto">
 	
 	<p>Phần mềm này không yêu cầu kỹ năng chuyên sâu và hoàn toàn không cần cài đặt, bạn chỉ cần tải về, giải nén và bắt đầu sử dụng. USB HDD BOOT hỗ trợ cả chuẩn UEFI và Legacy, phù hợp với hầu hết các dòng máy tính hiện nay, đồng thời tích hợp nhiều công cụ hữu ích như Windows PE, ứng dụng cứu hộ, diệt virus, và công cụ phục hồi dữ liệu.</p>
 	
@@ -153,7 +175,7 @@
     </ol>
     <h3>Xem video hướng dẫn Tạo menu boot cho Windows</h3>
     <div class="video">
-      <iframe src="https://www.youtube.com/embed/iYQ8vWc7-F4" title="Video hướng dẫn Tạo USB Boot đa năng cho USB" frameborder="0" allowfullscreen></iframe>
+      <iframe loading="lazy" src="https://www.youtube.com/embed/bwp0ZlJWrzA" title="Video hướng dẫn Tạo menu boot cho Windows" frameborder="0" allowfullscreen></iframe>
     </div>
 
     <h2>4. Tạo USB Boot đa năng cho USB</h2>
@@ -185,7 +207,7 @@
     </ol>
     <h3>Xem video hướng dẫn Tạo USB Boot đa năng cho USB</h3>
     <div class="video">
-      <iframe src="https://www.youtube.com/embed/iYQ8vWc7-F4" title="Video hướng dẫn Tạo USB Boot đa năng cho USB" frameborder="0" allowfullscreen></iframe>
+      <iframe loading="lazy" src="https://www.youtube.com/embed/iYQ8vWc7-F4" title="Video hướng dẫn Tạo USB Boot đa năng cho USB" frameborder="0" allowfullscreen></iframe>
     </div>
     <h2>5. Cập nhật dữ liệu mới</h2>
     <p>Nếu bạn đã sử dụng các phiên bản trước như USB HDD BOOT v2.7.2020.2, USB HDD BOOT v2.7.2020.3 hoặc USB HDD BOOT v2.8.2022.01 để tạo USB boot, và gặp phải tình trạng thiếu menu cài đặt Windows sau khi tích hợp các gói cài đặt Windows, bạn cần cập nhật dữ liệu lên phiên bản USB HDD BOOT v2.8.2022.02. Để thực hiện cập nhật này, hãy làm theo các bước hướng dẫn dưới đây:</p>
@@ -196,7 +218,7 @@
     </ol>
     <h3>Xem video hướng dẫn Hướng dẫn cập nhật USB HDD BOOT</h3>
     <div class="video">
-      <iframe src="https://www.youtube.com/embed/whSdc5t7BHI" title="Video hướng dẫn cập nhật USB HDD BOOT" frameborder="0" allowfullscreen></iframe>
+      <iframe loading="lazy" src="https://www.youtube.com/embed/whSdc5t7BHI" title="Video hướng dẫn Hướng dẫn cập nhật USB HDD BOOT" frameborder="0" allowfullscreen></iframe>
     </div>
     
     <h2>6. Khắc phục lỗi [044-X]</h2>
@@ -208,7 +230,7 @@
     </ul>
     <h3>Xem video hướng dẫn khắc phục lỗi khi tạo USB Boot</h3>
     <div class="video">
-      <iframe src="https://www.youtube.com/embed/dh1mxRg1aRU" title="Video hướng dẫn khắc phục lỗi khi tạo USB Boot" frameborder="0" allowfullscreen></iframe>
+      <iframe loading="lazy" src="https://www.youtube.com/embed/dh1mxRg1aRU" title="Video hướng dẫn khắc phục lỗi khi tạo USB Boot" frameborder="0" allowfullscreen></iframe>
     </div>
 
 	<h2>Kết luận</h2>
