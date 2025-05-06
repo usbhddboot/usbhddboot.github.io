@@ -105,6 +105,29 @@
       height: 400px;
       margin-top: 20px;
     }
+    .youtube-video {
+        max-width: 560px;
+        margin: 20px auto;
+        position: relative;
+    }
+    .youtube-thumbnail img {
+        width: 100%;
+        height: auto;
+        display: block;
+    }
+    .youtube-thumbnail::after {
+        content: '▶';
+        font-size: 48px;
+        color: white;
+        background: rgba(0, 0, 0, 0.6);
+        border-radius: 50%;
+        padding: 10px 20px;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        pointer-events: none;
+    }
     footer {
       background: linear-gradient(to right, #33AEFF, #0062E6);
       color: white;
@@ -174,8 +197,11 @@
         <li><strong>Khởi động lại máy tính:</strong> Sau khi sao chép các công cụ cứu hộ vào thư mục, bạn có thể khởi động lại máy tính. Khi máy tính khởi động lại, <strong>menu boot</strong> sẽ xuất hiện để bạn có thể lựa chọn và chạy Windows PE hoặc các công cụ cứu hộ máy tính.</li>
     </ol>
     <h3>Xem video hướng dẫn Tạo menu boot cho Windows</h3>
-    <div class="video">
-      <iframe loading="lazy" src="https://www.youtube.com/embed/bwp0ZlJWrzA" title="Video hướng dẫn Tạo menu boot cho Windows" frameborder="0" allowfullscreen></iframe>
+    
+    <div class="youtube-video" data-id="bwp0ZlJWrzA">
+        <div class="youtube-thumbnail" style="position: relative; cursor: pointer;">
+            <img src="https://img.youtube.com/vi/bwp0ZlJWrzA/hqdefault.jpg" alt="Video hướng dẫn Tạo menu boot cho Windows" title="Video hướng dẫn Tạo menu boot cho Windows" loading="lazy">
+        </div>
     </div>
 
     <h2>4. Tạo USB Boot đa năng cho USB</h2>
@@ -206,9 +232,13 @@
       <li>Khởi động lại máy tính và thiết lập BIOS/UEFI để khởi động từ USB.</li>
     </ol>
     <h3>Xem video hướng dẫn Tạo USB Boot đa năng cho USB</h3>
-    <div class="video">
-      <iframe loading="lazy" src="https://www.youtube.com/embed/iYQ8vWc7-F4" title="Video hướng dẫn Tạo USB Boot đa năng cho USB" frameborder="0" allowfullscreen></iframe>
+    
+    <div class="youtube-video" data-id="iYQ8vWc7-F4">
+        <div class="youtube-thumbnail" style="position: relative; cursor: pointer;">
+            <img src="https://img.youtube.com/vi/iYQ8vWc7-F4/hqdefault.jpg" alt="Video hướng dẫn Tạo USB Boot đa năng cho USB" title="Video hướng dẫn Tạo USB Boot đa năng cho USB" loading="lazy">
+        </div>
     </div>
+    
     <h2>5. Cập nhật dữ liệu mới</h2>
     <p>Nếu bạn đã sử dụng các phiên bản trước như USB HDD BOOT v2.7.2020.2, USB HDD BOOT v2.7.2020.3 hoặc USB HDD BOOT v2.8.2022.01 để tạo USB boot, và gặp phải tình trạng thiếu menu cài đặt Windows sau khi tích hợp các gói cài đặt Windows, bạn cần cập nhật dữ liệu lên phiên bản USB HDD BOOT v2.8.2022.02. Để thực hiện cập nhật này, hãy làm theo các bước hướng dẫn dưới đây:</p>
     <ol>
@@ -217,8 +247,11 @@
       <li>Chờ quá trình cập nhật hoàn tất</li>
     </ol>
     <h3>Xem video hướng dẫn Hướng dẫn cập nhật USB HDD BOOT</h3>
-    <div class="video">
-      <iframe loading="lazy" src="https://www.youtube.com/embed/whSdc5t7BHI" title="Video hướng dẫn Hướng dẫn cập nhật USB HDD BOOT" frameborder="0" allowfullscreen></iframe>
+    
+    <div class="youtube-video" data-id="whSdc5t7BHI">
+        <div class="youtube-thumbnail" style="position: relative; cursor: pointer;">
+            <img src="https://img.youtube.com/vi/whSdc5t7BHI/hqdefault.jpg" alt="Video hướng dẫn Hướng dẫn cập nhật USB HDD BOOT" title="Video hướng dẫn Hướng dẫn cập nhật USB HDD BOOT" loading="lazy">
+        </div>
     </div>
     
     <h2>6. Khắc phục lỗi [044-X]</h2>
@@ -229,8 +262,11 @@
       <li>Thử tạo boot lại bằng USB HDD BOOT</li>
     </ul>
     <h3>Xem video hướng dẫn khắc phục lỗi khi tạo USB Boot</h3>
-    <div class="video">
-      <iframe loading="lazy" src="https://www.youtube.com/embed/dh1mxRg1aRU" title="Video hướng dẫn khắc phục lỗi khi tạo USB Boot" frameborder="0" allowfullscreen></iframe>
+    
+    <div class="youtube-video" data-id="dh1mxRg1aRU">
+        <div class="youtube-thumbnail" style="position: relative; cursor: pointer;">
+            <img src="https://img.youtube.com/vi/dh1mxRg1aRU/hqdefault.jpg" alt="Video hướng dẫn khắc phục lỗi khi tạo USB Boot" title="Video hướng dẫn khắc phục lỗi khi tạo USB Boot" loading="lazy">
+        </div>
     </div>
 
 	<h2>Kết luận</h2>
@@ -241,5 +277,28 @@
   <footer class="text-center">
     <p>© 2025 USB HDD BOOT - Phát triển bởi Hoàng Đợi</p>
   </footer>
+  
+  <!-- Youtube Script -->
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+        const videos = document.querySelectorAll(".youtube-video");
+
+        videos.forEach(video => {
+            const thumbnail = video.querySelector(".youtube-thumbnail");
+            thumbnail.addEventListener("click", function () {
+                const videoId = video.getAttribute("data-id");
+                const iframe = document.createElement("iframe");
+                iframe.setAttribute("src", "https://www.youtube.com/embed/" + videoId + "?autoplay=1");
+                iframe.setAttribute("frameborder", "0");
+                iframe.setAttribute("allowfullscreen", "1");
+                iframe.setAttribute("allow", "accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture");
+                iframe.style.width = "100%";
+                iframe.style.height = "315px";
+                video.innerHTML = "";
+                video.appendChild(iframe);
+            });
+        });
+    });
+    </script>
 </body>
 </html>
