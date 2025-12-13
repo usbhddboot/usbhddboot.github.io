@@ -4,10 +4,8 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <!-- TIÊU ĐỀ -->
   <title>USB HDD BOOT - Tạo USB boot cứu hộ máy tính chuyên nghiệp UEFI/Legacy</title>
 
-  <!-- SEO Meta -->
   <meta name="description" content="USB HDD BOOT là phần mềm cứu hộ máy tính miễn phí, hỗ trợ tạo USB Boot chuẩn UEFI/Legacy với Windows PE và công cụ cứu hộ đa dạng. Phát triển bởi Hoàng Đợi.">
   <meta name="keywords" content="USB HDD BOOT, tạo USB boot, cứu hộ máy tính, boot UEFI, boot Legacy, Hoàng Đợi, phần mềm cứu hộ">
   <meta name="author" content="Hoàng Đợi">
@@ -15,20 +13,17 @@
   <link rel="canonical" href="https://usbhddboot.github.io/">
   <link rel="icon" href="https://usbhddboot.github.io/assets/images/favicon.ico" type="image/x-icon">
 
-  <!-- Open Graph Meta (Facebook, Zalo) -->
   <meta property="og:title" content="USB HDD BOOT - Cứu hộ máy tính chuyên nghiệp">
   <meta property="og:description" content="Tạo USB Boot chuẩn UEFI/Legacy với công cụ cứu hộ máy tính đa dạng. Phát triển bởi Hoàng Đợi.">
   <meta property="og:image" content="https://usbhddboot.github.io/assets/images/usb-hdd-boot-cuu-ho-may-tinh-chuyen-nghiep.jpg">
   <meta property="og:url" content="https://usbhddboot.github.io/">
   <meta property="og:type" content="website">
 
-  <!-- Twitter Card -->
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:title" content="USB HDD BOOT - Cứu hộ máy tính chuyên nghiệp">
   <meta name="twitter:description" content="Tạo USB Boot chuẩn UEFI/Legacy với Windows PE và công cụ cứu hộ đa dạng. Phát triển bởi Hoàng Đợi.">
   <meta name="twitter:image" content="https://usbhddboot.github.io/assets/images/usb-hdd-boot-cuu-ho-may-tinh-chuyen-nghiep.jpg">
 
-  <!-- Structured Data: SoftwareApplication -->
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
@@ -59,7 +54,6 @@
   }
   </script>
 
-  <!-- Fonts and CSS -->
   <link rel="preload" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'">
   <noscript>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap">
@@ -98,18 +92,29 @@
     .btn-custom {
       margin: 10px;
     }
+
+    /* Accessibility fixes */
+    .hero{ position:relative; }
+    .hero::before{
+      content:"";
+      position:absolute;
+      inset:0;
+      background:rgba(0,0,0,.14);
+    }
+    .hero > .container{ position:relative; z-index:1; }
+    .hero h1, .hero p{ text-shadow: 0 2px 4px rgba(0,0,0,.35); }
+    .hero .hero-highlight{ color:#FFD43B; font-weight:800; }
   </style>
 </head>
 
 <body>
-  <!-- Hero Section -->
   <header class="hero">
     <div class="container">
       <h1 class="display-4 fw-bold">USB HDD BOOT</h1>
       <p class="lead mt-3">
-        Giải pháp <span class="text-warning fw-bold">cứu hộ máy tính chuyên nghiệp</span>,
+        Giải pháp <span class="hero-highlight">cứu hộ máy tính chuyên nghiệp</span>,
         dễ dùng cho mọi người, hỗ trợ chuẩn
-        <span class="text-warning fw-bold">UEFI/Legacy</span>.
+        <span class="hero-highlight">UEFI/Legacy</span>.
       </p>
       <a href="https://usbhddboot.github.io/pages/tai-ve-usb-hdd-boot.html" class="btn btn-light btn-lg btn-custom">
         Tải về miễn phí
@@ -121,7 +126,6 @@
   </header>
 
   <main>
-    <!-- Giới thiệu -->
     <section class="py-5 bg-light" id="about">
       <div class="container">
         <h2 class="text-center section-title">USB HDD BOOT là gì?</h2>
@@ -136,7 +140,6 @@
       </div>
     </section>
 
-    <!-- Tính năng nổi bật -->
     <section class="py-5" id="features">
       <div class="container">
         <h2 class="text-center section-title">Tính năng nổi bật của USB HDD BOOT</h2>
@@ -165,7 +168,6 @@
       </div>
     </section>
 
-    <!-- Lý do nên dùng -->
     <section class="py-5 bg-light" id="why">
       <div class="container">
         <h2 class="text-center section-title">Vì sao nên chọn USB HDD BOOT?</h2>
@@ -187,32 +189,30 @@
       </div>
     </section>
 
-    <!-- Đối tượng phù hợp -->
     <section class="py-5" id="audience">
       <div class="container">
         <h2 class="text-center section-title">Ai nên dùng phần mềm USB HDD BOOT?</h2>
         <div class="row text-center">
           <div class="col-md-3 mb-4">
-            <h4 class="second-title">Kỹ thuật viên IT</h4>
+            <h3 class="second-title h4">Kỹ thuật viên IT</h3>
             <p>Giải pháp cứu hộ gọn nhẹ, hiệu quả trong mọi tình huống.</p>
           </div>
           <div class="col-md-3 mb-4">
-            <h4 class="second-title">Người dùng cá nhân</h4>
+            <h3 class="second-title h4">Người dùng cá nhân</h3>
             <p>Tự xử lý lỗi máy tính đơn giản tại nhà.</p>
           </div>
           <div class="col-md-3 mb-4">
-            <h4 class="second-title">Doanh nghiệp</h4>
+            <h3 class="second-title h4">Doanh nghiệp</h3>
             <p>Tiết kiệm thời gian triển khai và bảo trì hệ thống.</p>
           </div>
           <div class="col-md-3 mb-4">
-            <h4 class="second-title">Sinh viên CNTT</h4>
+            <h3 class="second-title h4">Sinh viên CNTT</h3>
             <p>Công cụ thực hành và học hỏi kỹ năng cứu hộ máy tính.</p>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- Hướng dẫn nhanh -->
     <section class="py-5 bg-light">
       <div class="container">
         <h2 class="section-title">Hướng dẫn nhanh cách tạo USB Boot với USB HDD BOOT</h2>
@@ -246,7 +246,6 @@
     </section>
   </main>
 
-  <!-- Footer -->
   <footer class="text-center">
     <p>© 2025 USB HDD BOOT - Phát triển bởi Hoàng Đợi</p>
   </footer>
